@@ -12,6 +12,10 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.save = this.save.bind(this);
+        this.handleDragEnter = this.handleDragEnter.bind(this);
+        this.handleDragLeave = this.handleDragLeave.bind(this);
+        this.handleDragOver = this.handleDragOver.bind(this);
+        this.handleDrop = this.handleDrop.bind(this);
         this.openEditor = this.openEditor.bind(this);
         this.onNameChange = this.onNameChange.bind(this);
         this.onColorChange = this.onColorChange.bind(this);
@@ -22,7 +26,8 @@ class App extends React.Component {
             name: "",
             type: "main",
             value: "#000000",
-            editedId: -1
+            editedId: -1,
+            cardList: 1
         };
         this.emptyPeople = {
             name: this.state.name,
@@ -39,6 +44,22 @@ class App extends React.Component {
         this.getUsers();
     };
 
+    handleDragEnter = e => {
+        e.preventDefault();
+        e.stopPropagation();
+    };
+    handleDragLeave = e => {
+        e.preventDefault();
+        e.stopPropagation();
+    };
+    handleDragOver = e => {
+        e.preventDefault();
+        e.stopPropagation();
+    };
+    handleDrop = e => {
+        e.preventDefault();
+        e.stopPropagation();
+    };
 
     openEditor(e) {
         let dataIndex = e.target.getAttribute('data-index') || $(e.target).closest("tr").attr('data-index');
@@ -85,6 +106,10 @@ class App extends React.Component {
             name: e.target.value
         });
     };
+
+    dndChange() {
+
+    }
 
     onTypeChange(e) {
         this.setState({
@@ -166,6 +191,10 @@ class App extends React.Component {
                     <Row className="my-1 p-3">
                         <Col col="12 lg-6" className="panel">
                             <MyTable
+                                handleDragEnter={this.handleDragEnter}
+                                handleDragLeave={this.handleDragLeave}
+                                handleDragOver={this.handleDragOver}
+                                handleDrop={this.handleDrop}
                                 peoples={this.state.peoples}
                                 openEditor={this.openEditor}
                             />
