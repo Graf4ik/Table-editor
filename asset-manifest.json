@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Table-editor/static/css/main.5d7f1edb.chunk.css",
+    "main.js": "/Table-editor/static/js/main.51bb7ad8.chunk.js",
+    "main.js.map": "/Table-editor/static/js/main.51bb7ad8.chunk.js.map",
+    "runtime-main.js": "/Table-editor/static/js/runtime-main.bd880a0f.js",
+    "runtime-main.js.map": "/Table-editor/static/js/runtime-main.bd880a0f.js.map",
+    "static/css/2.fabbef47.chunk.css": "/Table-editor/static/css/2.fabbef47.chunk.css",
+    "static/js/2.0685c8b1.chunk.js": "/Table-editor/static/js/2.0685c8b1.chunk.js",
+    "static/js/2.0685c8b1.chunk.js.map": "/Table-editor/static/js/2.0685c8b1.chunk.js.map",
+    "index.html": "/Table-editor/index.html",
+    "static/css/2.fabbef47.chunk.css.map": "/Table-editor/static/css/2.fabbef47.chunk.css.map",
+    "static/css/main.5d7f1edb.chunk.css.map": "/Table-editor/static/css/main.5d7f1edb.chunk.css.map",
+    "static/js/2.0685c8b1.chunk.js.LICENSE.txt": "/Table-editor/static/js/2.0685c8b1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd880a0f.js",
+    "static/css/2.fabbef47.chunk.css",
+    "static/js/2.0685c8b1.chunk.js",
+    "static/css/main.5d7f1edb.chunk.css",
+    "static/js/main.51bb7ad8.chunk.js"
+  ]
+}
