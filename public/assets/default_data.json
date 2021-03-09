@@ -1,0 +1,18 @@
+{"table": [
+    {
+      "name": "Dmitriy",
+      "type": "main",
+      "value": "#f4f4f4"
+  	},
+  	{
+      "name": "Igor",
+      "type": "main",
+      "value": "#f8f8f8"
+  	},
+  	{
+      "name": "Anastasia",
+      "type": "side",
+      "value": "#fff"
+  	}
+  ]
+}
